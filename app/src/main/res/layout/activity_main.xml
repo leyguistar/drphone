@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0D6BF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView"
+        android:layout_width="368dp"
+        android:layout_height="64dp"
+        android:text="Dr.Phone"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#142FDC"
+        android:textSize="48sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btSintomas"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#112398"
+        android:text="Sintomas"
+        android:textColor="#DCECEC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btHistorial"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#112398"
+        android:text="Historial Medico"
+        android:textColor="#F8EEEE"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btAnalisis"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#112398"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Analisis de Examenes Medicos" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btCentrosMedicos"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#112398"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Centros Medicos cercanos" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btExperiencia"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#112398"
+        android:text="Experiencia De Los Usuarios"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+</LinearLayout>

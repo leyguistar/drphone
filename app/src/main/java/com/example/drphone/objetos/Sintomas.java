@@ -1,0 +1,30 @@
+package com.example.drphone.objetos;
+
+public enum Sintomas {
+    temperatura,
+    tos_seca,
+    dolor_de_cabeza,
+    cansancio,
+    dolor_muscular,
+    dolor_articular,
+    congestion_nasal,
+    dolor_de_garganta,
+    conjuntivitis,
+    diarrea,
+    perdida_de_olfato,
+    perdida_de_gusto,
+    erupciones_cutaneas,
+    nauseas,
+    escalofrios,
+    vertigo,
+    dificultad_de_respirar,
+    presion_de_pecho,
+    incapacidad_de_hablar,
+    perdida_de_apetito,
+    confusion,
+    ansiedad,
+    depresion,
+    transtorno_de_sueno,
+    saturacion,
+    contacto_con_covid
+}
