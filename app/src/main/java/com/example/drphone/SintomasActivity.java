@@ -13,11 +13,16 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.drphone.objetos.MensajesSintomas;
 import com.example.drphone.objetos.Paciente;
 import com.example.drphone.objetos.Sintomas;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class SintomasActivity extends AppCompatActivity implements View.OnClickListener{
     Button btSi,btNo,btIngresar,btNose;
@@ -85,6 +90,10 @@ public class SintomasActivity extends AppCompatActivity implements View.OnClickL
             MensajesSintomas.paciente.sintomas[sintoma] = -1;
 
         }else if(v.getId() == R.id.btIngresarMedicion){
+            if(etValue.getText().toString().isEmpty()){
+                Toast.makeText(this, "Por favor ingrese un valor", Toast.LENGTH_SHORT).show();
+                return;
+            }
             int value = Integer.valueOf(etValue.getText().toString());
             if(sintoma == Sintomas.saturacion.ordinal()){
                 if(value > 93){
@@ -108,8 +117,11 @@ public class SintomasActivity extends AppCompatActivity implements View.OnClickL
 
         }else if(v.getId() == R.id.ivHelp){
             AlertDialog.Builder alertHelp = new AlertDialog.Builder(this);
-            alertHelp.setTitle("ayuda");
-            alertHelp.setMessage("");
+
+            alertHelp.setTitle(MensajesSintomas.titulos[sintoma]);
+            alertHelp.setMessage(MensajesSintomas.ayudas[sintoma]);
+            alertHelp.show();
+            return;
         }
         if(sintoma+1 >= MensajesSintomas.textos.length){
             Intent i = new Intent(this, ResultadoActivity.class);
@@ -122,4 +134,5 @@ public class SintomasActivity extends AppCompatActivity implements View.OnClickL
         }
 
     }
+
 }
