@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A0D6BF"
+    android:background="#CCC9D1"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -18,7 +18,7 @@
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#142FDC"
+        android:textColor="#F00807"
         android:textSize="48sp"
         android:textStyle="italic"
         tools:layout_editor_absoluteX="16dp"
@@ -30,9 +30,9 @@
         android:id="@+id/btSintomas"
         android:layout_width="280dp"
         android:layout_height="80dp"
-        android:backgroundTint="#112398"
+        android:backgroundTint="#F00807"
         android:text="Sintomas"
-        android:textColor="#DCECEC"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -42,9 +42,9 @@
         android:id="@+id/btHistorial"
         android:layout_width="280dp"
         android:layout_height="80dp"
-        android:backgroundTint="#112398"
+        android:backgroundTint="#F00807"
         android:text="Historial Medico"
-        android:textColor="#F8EEEE"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"/>
 
@@ -54,7 +54,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="280dp"
         android:layout_height="80dp"
-        android:backgroundTint="#112398"
+        android:backgroundTint="#F00807"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -66,7 +66,7 @@
         android:id="@+id/btCentrosMedicos"
         android:layout_width="280dp"
         android:layout_height="80dp"
-        android:backgroundTint="#112398"
+        android:backgroundTint="#F00807"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -78,7 +78,7 @@
         android:id="@+id/btExperiencia"
         android:layout_width="280dp"
         android:layout_height="80dp"
-        android:backgroundTint="#112398"
+        android:backgroundTint="#F00807"
         android:text="Experiencia De Los Usuarios"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
